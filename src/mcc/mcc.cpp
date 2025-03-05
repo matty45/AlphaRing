@@ -28,12 +28,12 @@ namespace MCC {
         CDeviceManager** device_manager;
 
         AlphaRing::Hook::Offset({
-            {0x3FFCAA8, 0x3E4B048, (void**)&ppGameEngine},
-            {0x3F76E50, 0x3DC54D0, (void**)&game_manager},
-            {0x3FFFFF8, 0x3E4E590, (void**)&device_manager},
+            {0x4000ba0, 0x3E4B048, (void**)&ppGameEngine},
+            {0x3f7b190, 0x3DC54D0, (void**)&game_manager},
+            {0x4001b78, 0x3E4E590, (void**)&device_manager},
             {OFFSET_MCC_PF_DELTA_TIME, OFFSET_MCC_WS_PF_DELTA_TIME, (void**)&deltaTime},
-            {0x3FFCAA7, 0x3E4B047, (void**)&bIsInGame},
-            {0x3FFCAC0, 0x3E4B060, (void**)&g_ppGameGlobal},
+            {0x4000b9f, 0x3E4B047, (void**)&bIsInGame},
+            {0x4000bc8, 0x3E4B060, (void**)&g_ppGameGlobal},
         });
 
         assertm(ppGameEngine != nullptr, "MCC: failed to get ppGameEngine");
